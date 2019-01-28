@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.example.demo.mapper.MercMapper">
+    <resultMap id="Result" type="com.example.demo.po.MercChantPo">
+        <result property="mid" column="MID"></result>
+        <result property="mname" column="MNAME"></result>
+        <result property="maddress" column="MADDRESS"></result>
+        <result property="postTime" column="POSTTIME"></result>
+        <result property="postFee" column="POSTFEE"></result>
+        <result property="evaluate" column="EVALUATE"></result>
+        <result property="startFee" column="STARTFEE"></result>
+
+
+    </resultMap>
+
+
+    <select  id="findAll" resultMap="Result">
+        SELECT
+        *
+        FROM
+        mercchant
+
+    </select>
+
+    <select id="findById" resultMap="Result">
+        SELECT
+        *
+        FROM
+        mercchant
+        WHERE
+        MID = #{mid}
+
+    </select>
+
+
+
+</mapper>

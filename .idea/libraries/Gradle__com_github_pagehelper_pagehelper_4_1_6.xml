@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.pagehelper:pagehelper:4.1.6">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.pagehelper/pagehelper/4.1.6/48eb74110c115b01f4fe8d184845247eb0d22b0f/pagehelper-4.1.6.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.pagehelper/pagehelper/4.1.6/e745c6a3dd42fd1588b324a8313b2d5d9d9a78ae/pagehelper-4.1.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.pagehelper/pagehelper/4.1.6/294393e3c37c2e15aeeb58c2a38f8334b9955e9c/pagehelper-4.1.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.mapper.OrderMapper">
+
+    <resultMap id="Result" type="com.example.demo.domain.Order">
+        <id property="oid" column="oid" />
+        <result property="ordertime" column="ordertime" />
+        <result property="total" column="total" />
+        <result property="state" column="state" />
+        <result property="name" column="name" />
+        <result property="address" column="address" />
+        <result property="telephone" column="telephone" />
+        <result property="uid" column="uid" />
+        <result property="payChannel" column="payChannel" />
+        <result property="mid" column="mid" />
+        <result property="orderState" column="orderState" />
+
+
+    </resultMap>
+
+    <select id="saveOrder" parameterType="com.example.demo.domain.Order">
+
+    INSERT INTO test.Order
+    VALUES
+     (#{oid,jdbcType=VARCHAR},#{ordertime,jdbcType=DATE},#{total,jdbcType=DOUBLE}
+    ,#{state,jdbcType=INTEGER},#{name,jdbcType=VARCHAR},#{address,jdbcType=VARCHAR},#{telephone,jdbcType=VARCHAR},#{uid,jdbcType=VARCHAR}
+    ,#{payChannel,jdbcType=VARCHAR},#{mid,jdbcType=VARCHAR},#{orderState,jdbcType=VARCHAR})
+
+    </select>
+
+    <update id="updateState" parameterType="String">
+
+        UPDATE test.Order
+        SET state = '1'
+        WHERE oid = #{oid,jdbcType=VARCHAR}
+    </update>
+
+    <select id="queryOrder" resultMap="Result">
+        select * from test.Order WHERE uid = #{uid}
+
+    </select>
+</mapper>

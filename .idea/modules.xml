@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/eleme.iml" filepath="$PROJECT_DIR$/.idea/eleme.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eleme_main.iml" filepath="$PROJECT_DIR$/.idea/modules/eleme_main.iml" group="eleme" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eleme_test.iml" filepath="$PROJECT_DIR$/.idea/modules/eleme_test.iml" group="eleme" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/githup-eleme.iml" filepath="$PROJECT_DIR$/.idea/modules/githup-eleme.iml" />
+    </modules>
+  </component>
+</project>

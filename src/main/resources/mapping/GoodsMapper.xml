@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.mapper.GoodsMapper">
+    <resultMap id="result" type="com.example.demo.domain.Goods">
+        <result property="id" column="ID"></result>
+        <result property="mid" column="MID"></result>
+        <result property="gname" column="GNAME"></result>
+        <result property="price" column="PRICE"></result>
+        <result property="amount" column="AMOUNT"></result>
+        <result property="mname" column="MNAME"></result>
+        <result property="maddress" column="MADDRESS"></result>
+        <result property="postTime" column="POSTTIME"></result>
+        <result property="postFee" column="POSTFEE"></result>
+        <result property="evaluate" column="EVALUATE"></result>
+        <result property="startFee" column="STARTFEE"></result>
+        <result property="imageName" column="imageName"></result>
+
+    </resultMap>
+
+    <select id="findById" resultMap="result" parameterType="string">
+        SELECT
+        g.ID,g.MID,g.GNAME,g.PRICE,g.AMOUNT,g.imageName,m.MNAME,m.MADDRESS,m.POSTTIME,m.POSTFEE,m.EVALUATE,m.STARTFEE
+        from Goods g,mercchant m
+        WHERE
+        g.MID = m.MID
+        and
+        g.MID = #{mid}
+
+    </select>
+
+    <select id="findNameById" parameterType="string" resultMap="result">
+        SELECT
+         *
+        from Goods g
+        WHERE
+        g.ID = #{id}
+
+    </select>
+
+</mapper>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.mapper.OrderItemMapper">
+
+    <resultMap id="Result" type="com.example.demo.domain.OrderItem">
+        <result property="itemid" column="itemid"></result>
+        <result property="count" column="count"></result>
+        <result property="subtotal" column="subtotal"></result>
+        <result property="gid" column="gid"></result>
+        <result property="oid" column="oid"></result>
+        <result property="uid" column="uid"></result>
+        <result property="state" column="state"></result>
+
+    </resultMap>
+
+
+
+    <select id="saveorderItem" parameterType="com.example.demo.domain.OrderItem">
+
+        INSERT INTO test.Order_Item
+
+        VALUES (#{itemid,jdbcType=VARCHAR},#{count,jdbcType=INTEGER},#{subtotal,jdbcType=DOUBLE}
+        ,#{gid,jdbcType=VARCHAR},#{oid,jdbcType=VARCHAR},#{uid,jdbcType=VARCHAR})
+
+    </select>
+
+    <select id="queryOrder" resultMap="Result">
+
+        SELECT * FROM test.Order_Item
+        WHERE oid = #{oid};
+
+    </select>
+
+
+</mapper>

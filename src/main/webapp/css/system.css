@@ -1,0 +1,252 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body{
+	background: #f6f6f6;
+}
+
+.nav{
+	width: 1300px;
+	height: 60px;
+	background: #0578a2;
+	line-height: 60px;
+	color: #fff;
+	margin: 0 auto;
+}
+.nav img.logo{
+	float: left;
+	height: 60px;
+	margin: 0px 20px;
+}
+.nav span{
+	float: left;
+	margin-right: 10px;
+}
+.nav ul{
+	float: left;
+}
+.nav ul li{
+	float: left;
+	padding: 0px 20px;
+	height: 60px;
+	text-align: center;
+	cursor: pointer;
+}
+.nav ul li.click{
+	background: #15aae1;
+}
+.cb{
+	padding: 6px 10px;
+	background: #fff;
+	color: #666;
+	font-size: 14px;
+	border: 0;
+	cursor: pointer;
+	margin-left: 10px;
+}
+.nav p{
+	float: right;
+	margin-right: 15px;
+}
+.nav p a img{
+	height: 20px;
+	margin-right: 25px;
+}
+
+
+.con{
+	width: 1300px;
+	margin: 0 auto;
+	position: relative;
+}
+.task{
+	width: 100%;
+	height: 50px;
+	background: #15aae1;
+	margin-bottom: 20px;
+}
+.task ul{
+	width: 80%;
+	height: 40px;
+	margin-left: 25px;
+}
+.task ul li{
+	float: left;
+	padding: 0 30px;
+	height: 40px;
+	border-radius: 5px 5px 0 0;
+	background: #fff;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+	margin-right: 5px;
+	position: relative;
+	top: 10px;
+	display: none;
+}
+.task ul li span{
+	position: absolute;
+	top: -10px;
+	right: 5px;
+	color: #aaa;
+	font-weight: bold;
+}
+.position{
+	width: 100%;
+	height: 40px;
+	background: #fff;
+	color: #666;
+	line-height: 40px;
+}
+
+.btn{
+	background: #b9d6e6;
+	width: 100%;
+	height: 50px;
+	/*margin-top: 20px;*/
+}
+.btn a{
+	float: left;
+	margin: 10px 0px 0px 15px;
+	padding: 5px 15px;
+	line-height: 22px;
+	background: #fff;
+	color: #666;
+	text-decoration: none;
+}
+.tiao{
+	width: 100%;
+	height: 40px;
+	margin-top: 20px;
+	/*background: #fff;*/
+}
+.tiao span{
+	float: left;
+	margin-left: 20px;
+}
+.tiao hr{
+	float: left;
+	width: 82%;
+	margin: 10px;
+	position: relative;
+	top: 13px;
+}
+
+.tj{
+	width: 95%;
+	height: 650px;
+	padding: 30px;
+	background: #fff;
+	line-height: 50px;
+	position: absolute;
+	top: 130px;
+	display: none;
+}
+.tj form{
+	clear: both;
+}
+.tj input{
+	width: 140px;
+	height: 20px;
+	margin-right: 48px;
+}
+.table{
+	margin-top: 20px;
+}
+.table tr{
+	height: 30px;
+}
+.table th{
+	background: #bbb;
+}
+.table th,td{
+	border: 1px solid #666;
+	line-height: 30px;
+	text-align: center;
+	padding: 5px 20px;
+	color: #333;
+	font-size: 14px;
+}
+.table td.blue{
+	color: blue;
+}
+.table a{
+	margin-right: 5px;
+	font-size: 14px;
+	text-decoration: none;
+	color: #8fd9ff;
+}
+
+.create{
+	width: 95%;
+	padding: 30px;
+	background: #fff;
+	position: absolute;
+	top: 130px;
+	z-index: 100;
+	display: none;
+}
+.ct{
+	width: 50%;
+	margin: 0px auto;
+}
+.ct th{
+	padding: 10px;
+	text-align: left;
+	color: #666;
+	background: #eee;
+	font-size: 16px;
+	border: 0;
+}
+.ct td{
+	border: 0;
+	padding: 7px;
+}
+.ct td:nth-child(2n+1){
+	text-align: right;
+	width: 150px;
+	vertical-align: top;
+}
+.ct td:nth-child(2n){
+	text-align: left;
+}
+.ct td input{
+	width: 280px;
+	height: 22px;
+}
+.ct td select{
+	width: 200px;
+	height: 22px;
+}
+.ct td textarea{
+	width: 280px;
+	height: 150px;
+}
+.ct td span{
+	color: red;
+}
+.ct td p.tip{
+	font-size: 12px;
+	color: #666;
+}
+.ct tfoot{
+	background: #eee;
+}
+.ct tfoot input{
+	width: 50px;
+}
+.ct tfoot a{
+	color: #666;
+	text-decoration: none;
+	margin: 0 10px;
+}
+
+.welcom{
+	width: 100%;
+	text-align: center;
+	line-height: 250px;
+	font-size: 40px;
+	color: #aaa;
+}
